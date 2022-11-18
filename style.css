@@ -141,3 +141,96 @@ header {
     padding: 2rem;
     color: #0052cc;
 }
+
+
+
+/* ////////// img slider  */
+#img-slider {
+    overflow: hidden;
+    margin: 5rem 0;
+    background-color: #000308;
+}
+
+.hed {
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+    font-weight: bold;
+    text-shadow: 6px 4px 8px #3e4986;
+    color: rgb(87, 85, 228);
+}
+
+#img-slider figure {
+    position: relative;
+    width: 500%;
+    left: 0;
+    animation: 10s slider infinite;
+    height: 30rem;
+}
+
+#img-slider figure img {
+    width: 20%;
+    display: block;
+    height: 100%;
+    float: left;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 4px rgba(2, 0, 128, 0.932);
+    padding: 1rem;
+    opacity: 0.8;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+#img-slider .btn {
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    color: white;
+    background-color: rgba(1, 0, 41, 0.582);
+    border: 2px solid rgb(11, 0, 161);
+    box-shadow: 2px 2px 2px 2px rgb(17, 0, 255);
+    width: 20rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
